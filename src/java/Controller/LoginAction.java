@@ -46,11 +46,13 @@ public class LoginAction {
             session.remove("USERNAME");
             session.put("USERNAME", username);
             
-            return "SUCCESS";
+            return "success";
+        }else{
+            return "fail";
         }
     
         
-        return "FAIL";
+        
     }
     
 }

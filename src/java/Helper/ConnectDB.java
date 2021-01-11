@@ -17,7 +17,7 @@ public class ConnectDB {
 
     public static Connection getConnect() {
         String driverName = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-        String dbURL = "jdbc:sqlserver://localhost:1433;databaseName=SE1404_DE140006";
+        String dbURL = "jdbc:sqlserver://localhost:1433;databaseName=LAB231_Lab1";
         String userDB = "sa";
         String passDB = "123123";
 

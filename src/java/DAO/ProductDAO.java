@@ -23,7 +23,7 @@ public class ProductDAO {
     public List<Product> getAllProduct(){
         List<Product> list = new ArrayList<>();
         try {
-            String sql = "SELECT * FROM Contacts";
+            String sql = "SELECT * FROM product";
             Connection conn = ConnectDB.getConnect();
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);

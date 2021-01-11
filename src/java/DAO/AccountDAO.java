@@ -20,12 +20,12 @@ import java.sql.SQLException;
 public class AccountDAO {
     public boolean getAccount(String username, String pass){
         try {
-            String sql = "SELECT * FROM Account WHERE username = ? AND pass = ?";
+            String sql = "SELECT * FROM account WHERE username = ? AND password = ?";
             Connection conn = ConnectDB.getConnect();
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, username);
             stmt.setString(2, pass);
-            ResultSet rs = stmt.executeQuery(sql);
+            ResultSet rs = stmt.executeQuery();
             if (rs.next()) {
               return true;
             }else{
